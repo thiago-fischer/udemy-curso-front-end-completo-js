@@ -1,0 +1,172 @@
+/* Universal */
+html {
+    font-family: Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* Header */
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: #232a31;
+    height: 80px;
+    align-items: center;
+}
+
+.img-logo {
+  width: 50px;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.navbar-items li a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar-items li a:hover {
+    color: #a2a2a2;
+    transition: 0.5s;
+}
+
+.default-button {
+    background-color: #43a443;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.default-button:hover {
+    background-color: #317731;
+    transition: 0.5s;
+}
+
+/* Main Banner */
+.main-banner {
+    padding: 160px 0;
+    background-image: url("../img/mainbanner.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.main-banner h1 {
+    font-size: 54px;
+}
+
+.main-banner p {
+    font-size: 32px;
+}
+
+.main-banner h1, 
+.main-banner p {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: #000 3px 2px 3px;
+}
+
+/* Services */
+.services {
+    padding: 80px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    gap: 30px;
+}
+
+.services li {
+    padding: 20px;
+}
+
+.services i,
+.services h3,
+.services p {
+    margin-bottom: 15px;
+}
+
+.fas {
+    font-size: 60px;
+}
+
+.fa-shield-alt {
+    color: #52ab52;
+}
+
+.fa-rocket{
+    color: red;
+}
+
+.fa-comments {
+    color: orange;
+}
+
+.services p {
+    font-size: large;
+    line-height: 1.5;
+}
+
+/* Pricing Container */
+.pricing-container h2 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.pricing-container p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.plans-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 80px 40px;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.plan {
+    display: flex;
+    align-items: center;
+    flex-direction: column;;
+    flex: 1;
+    margin: 30px;
+}
+.plan .price {
+    background-color: green;
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: -50px;
+}
+
+.plan-name {
+    height: 100px;
+    width: 100%;
+    background-color: #232a31;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10px;
+}
