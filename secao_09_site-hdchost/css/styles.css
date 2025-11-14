@@ -131,42 +131,153 @@ html {
 
 .plans-container {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    padding: 80px 40px;
-    align-items: center;
+    margin: 0 auto;
+    width: 90%;
     text-align: center;
-    
+
 }
 
 .plan {
-    display: flex;
-    align-items: center;
-    flex-direction: column;;
     flex: 1;
-    margin: 30px;
+    max-width: 275px;
+    margin: 0 20px;
 }
+
+.plan li {
+    height: 50px;
+    line-height: 50px;
+    background-color: #e8e9ea;
+    color: #333;
+}
+
 .plan .price {
-    background-color: green;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    width: 110px;
-    height: 110px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #2cc762;
+    margin: 0 auto;
+    line-height: 120px;
+    color: #fff;
     position: relative;
     bottom: -50px;
 }
 
-.plan-name {
-    height: 100px;
-    width: 100%;
+.plan .plan-name {
     background-color: #232a31;
+    height: 100px;
+    text-align: center;
     color: #fff;
+    padding: 50px 0;
+    font-size: 20px;
+    font-weight: bold;
     text-transform: uppercase;
-    font-size: large;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 10px;
+}
+
+.plan .plan-btn {
+    background-color: #2cc762;
+    color: #fff;
+    cursor: pointer;
+    font-size: 24px;
+    height: 75px;
+    line-height: 75px;
+}
+
+.plan .recommended {
+    background-color: #f45657;
+}
+
+/* Search Domain Container */
+.searchdomain-container {
+    margin: 80px 0 0 0;
+    background-color: #34454e;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.searchdomain-container h2 {
+    color: #fff;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.searchdomain-container p {
+    color: #d5d5d5;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.searchdomain-container input {
+    display: block;
+    border-style: none;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.searchdomain-container input[type="text"] {
+    width: 60%;
+    font-size: 20px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.searchdomain-container input[type="submit"] {
+    background-color: #2cc762;
+    padding: 15px 20px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    opacity: .8;
+}
+
+.searchdomain-container input[type="submit"]:hover {
+    opacity: 1;
+}
+
+
+/* Contact Container */
+.contact-container {
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.contact-container h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.contact-container p {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.contact-container input,
+.contact-container textarea {
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 0 10px 20px;
+}
+
+.contact-container textarea{
+    display: block;
+    width: 480px;
+    height: 240px;
+    margin: 0 auto 20px;
+}
+
+.contact-container input[type="submit"] {
+    background-color: #2cc762;
+    color: #fff;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    padding: 20px 0 100px 0;
+    text-align: center;
+    font-weight: bold;
 }
