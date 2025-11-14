@@ -281,3 +281,62 @@ footer {
     text-align: center;
     font-weight: bold;
 }
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .plans-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-banner p {
+        font-size: 24px;
+    }
+
+    .plan {
+        margin: 0 5px;
+    }
+}
+
+@media (max-width: 465px) {
+    .plans-container,
+    .services {
+        flex-direction: column;
+    }
+
+    .plan {
+        margin: 0 auto;
+        min-width: 70%;
+    }
+
+    .contact-container textarea {
+        width: 90%;
+    }
+
+    .navbar {
+        margin: 0 5px;
+    }
+
+    .navbar ul {
+        justify-content: space-around;
+    }
+
+    .navbar-container {
+        padding: 5px;
+    }
+
+    .default-button {
+    padding: 10px 10px;
+    }
+
+    .searchdomain-container input[type="text"] {
+        width: 90%;
+    }
+
+    .contact-container,
+    .searchdomain-container {
+        padding: 5rem 1rem;
+    }
+
+}
